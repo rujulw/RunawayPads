@@ -16,17 +16,17 @@ import java.io.IOException;
 public class RunawayPads {
     // Array of file paths for the .wav files corresponding to each button
     private String[] soundFiles = {
-        "lib/soundFiles/piano1.wav",
-        "lib/soundFiles/piano2.wav",
-        "lib/soundFiles/piano3.wav",
-        "lib/soundFiles/piano4.wav",
-        "lib/soundFiles/piano5.wav",
-        "lib/soundFiles/piano6.wav",
-        "lib/soundFiles/piano7.wav",
-        "lib/soundFiles/piano8.wav",
-        "lib/soundFiles/runawayInstrumental.wav",
-        "lib/soundFiles/performingInstrumental.wav",
-        "lib/soundFiles/lookatcha.wav"
+        "soundFiles/piano1.wav",
+        "soundFiles/piano2.wav",
+        "soundFiles/piano3.wav",
+        "soundFiles/piano4.wav",
+        "soundFiles/piano5.wav",
+        "soundFiles/piano6.wav",
+        "soundFiles/piano7.wav",
+        "soundFiles/piano8.wav",
+        "soundFiles/runawayInstrumental.wav",
+        "soundFiles/performingInstrumental.wav",
+        "soundFiles/lookatcha.wav"
     };
 
     // Array of key bindings corresponding to each button (A to M)
