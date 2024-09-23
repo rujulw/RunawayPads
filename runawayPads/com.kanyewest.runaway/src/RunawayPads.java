@@ -1,3 +1,9 @@
+/**
+ * The RunawayPads class creates a GUI with pads that plays Runaway by Kanye West specific keys are pressed.
+ * It allows dynamic sound playback for buttons and keyboard bindings.
+ * 
+ * @author rujulw
+ */
 import javax.sound.sampled.*;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
@@ -21,6 +27,12 @@ public class RunawayPads {
         "/lib/soundFiles/runawayInstrumental.wav"
     };
 
+    /**
+     * Creates a JButton that represents a pad. When clicked or its corresponding key is pressed, it plays a sound.
+     * 
+     * @param index the index of the sound file and key binding to associate with the button
+     * @return the JButton instance representing the pad
+     */
     public JButton createPad(int index) {
         JButton button = new JButton("Pad " + (index + 1));
         button.setFocusable(false); // Remove focus to avoid conflicting with keyboard events
@@ -41,7 +53,11 @@ public class RunawayPads {
         return button;
     }
 
-    // Method to play the sound
+    /**
+     * Plays the sound associated with the given index by loading and playing the corresponding .wav file.
+     * 
+     * @param index the index of the sound file to play
+     */
     private void playSound(int index) {
         try {
             // Load the sound file using getResource()
